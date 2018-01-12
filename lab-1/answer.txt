@@ -1,0 +1,17 @@
+----GREP----
+cat /usr/share/dict/words | grep -E "(India|Africa)"
+cat /usr/share/dict/words | grep -E "\<[AEIOUaeiou].*\>"
+cat /usr/share/dict/words | grep -E "\<[AEIOUaeiou].*[AEIOUaeiou]\>"
+cat /usr/share/dict/words | grep -E "(aa)+"
+cat /usr/share/dict/words | grep -E "[!.,?'\":;\-]"
+cat /usr/share/dict/words | grep -E "\<[A-Z]\w*\>", cat /usr/share/dict/words | grep -E "\<\w*[A-Z]\>", cat /usr/share/dict/words | grep -E "\<\w*[A-Z]\w*>"
+cat /usr/share/dict/words | grep -E "\<\w{20,}\>"
+cat /usr/share/dict/words | grep -E "\<([a-z]{5}|[a-z]{10})\>"
+cat /usr/share/dict/words | grep -E "\<(\w).*\1\>"
+
+
+---SED---
+cat sed_text.txt | sed -n "/Anycity/p"
+cat sed_text.txt | sed -n "/^[AEIOUaeiou]/p"
+cat sed_text.txt | sed -n "/\/198[0-9]/p"
+cat sed_text.txt | sed -n "s/[0-9]/?/pg"

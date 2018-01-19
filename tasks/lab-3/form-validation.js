@@ -1,3 +1,5 @@
+// Return true if input is valid
+
 function validateUsername(name) {
 	// Length of username should be between 4 to 8
 	// It should not contain any whitespace
@@ -10,6 +12,7 @@ function validatePassword(passowrd) {
 
 function validateCountry(country) {
 	// Check if any country is selected
+	// Check if country belong to given list: [AF, AL, DZ, AS, AD]
 }
 
 function validateEmail(email) {
@@ -21,5 +24,6 @@ function validateGender(gender) {
 }
 
 function validateLanguage(lang) {
+	// lang -> list of langs selected
 	// Check if atleast one of the checkbox is checked
 }
